@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Events || The Green Pig Pub</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="stylesheet" href="/assets/font-awesome/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Bitter" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/media_queries.css">
+    <link rel="stylesheet" href="css/button.css">
+    
+    <style>
+    
+        .events {
+            background: url(/assets/img/events_1.jpg) center center no-repeat;
+            background-size: cover;
+        }
+        
+        .sub-menu {
+            left: 0;
+            background-color: #111;
+        }
+        
+        .sub-menu ul li {
+            display: inline-block;
+            padding-left: 35px;
+            padding-right: 35px;
+        }
+    
+    </style>
+    
+    
+</head>
+<body>
+   
+<!-- ======= MAIN NAV ========================== -->   
+   
+    <nav class="main-nav fixed">
+        <ul>
+            <li><a href="about.html">About</a></li>
+            <li class="dropbtn"><a href="menu.html">Menu <i class="fa fa-caret-down"></i></a>
+                <ul class="dropdown dropdown-up">
+                    <a href="food.html"><li>Food</li></a>
+                    <a href="drinks.html"><li id="lil-left">Drinks</li></a>
+                </ul>       
+            </li>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="contact.html">Contact</a></li>  
+        </ul>
+    </nav>
+    
+<!-- ======= HERO ========================== -->
+
+    <header class="hero events">
+        
+        <div class="hero-container">
+            
+            <h2>Events</h2>
+                        
+        </div>
+
+    </header>
+    
+    
+<!-- ======= EVENT INTRO ========================== -->
+   
+   <section>
+       
+       <div class="container">
+           
+           <h3>The Pig Style</h3>
+           
+           <p>Each and every day we got some kinda something happening here at the Pig! Take a look at what you could be appart of!</p>
+           
+           <div class="divider"></div>
+           
+           <nav class="sub-menu">
+               
+               <ul>
+
+                   <li><input type="submit" id="mon" value="Monday"></li>
+                   <li><input type="submit" id="tue" value="Tuesday"></li>
+                   <li><input type="submit" id="wed" value="Wednesday"></li>
+                   <li><input type="submit" id="thur" value="Thursday"></li>
+                   <li><input type="submit" id="fri" value="Friday"></li>
+                   <li><input type="submit" id="sat" value="Saturday"></li>
+                   <li><input type="submit" id="sun" value="Sunday"></li>
+
+               </ul>
+               
+           </nav>
+           
+           <div class="row">
+               
+               <div class="col col-xs-2">
+                   
+                   <input type="submit" id="mon" value="Monday">
+                   
+               </div> <!-- col -->
+               
+               <div class="col col-xs-2">
+                   
+                   <input type="submit" id="tue" value="Tuesday">
+                   
+               </div> <!-- col -->
+               
+               <div class="col col-xs-1">
+                   
+                   <input type="submit" id="wed" value="Wednesday">
+                   
+               </div> <!-- col -->
+               
+               <div class="col col-xs-1">
+                   
+                   <input type="submit" id="thur" value="Thursday">
+                   
+               </div> <!-- col -->
+               
+               <div class="col col-xs-2">
+                   
+                   <input type="submit" id="fri" value="Friday">
+                   
+               </div> <!-- col -->
+               
+               <div class="col col-xs-2">
+                   
+                   <input type="submit" id="sat" value="Saturday">
+                   
+               </div> <!-- col -->
+               
+               <div class="col col-xs-2">
+                   
+                   <input type="submit" id="sun" value="Sunday">
+                   
+               </div> <!-- col -->
+               
+           </div> <!-- row -->
+           
+       </div> <!-- container -->
+       
+   </section>
+    
+    
+<!-- ======= FOOTER ========================== -->
+
+    <footer>
+
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col col-xs-4">
+
+                    <h4>Hours</h4>
+
+                    <ul class="hours">
+                        <li><i class="fa fa-clock-o"></i> Mon-Sat 11:00a - 1:00a</li>
+                        <li><i class="fa fa-tv"></i> Sun 10:00a - 1:00a</li>
+                        <li><i class="fa fa-phone"></i> Phone : (801)532-7441</li>
+                        <li><i class="fa fa-address-book"></i> <a target="_blank" href="https://www.google.com/maps/place/The+Green+Pig+Pub/@40.7609285,-111.8920536,17z/data=!3m1!4b1!4m5!3m4!1s0x8752f51053a20201:0x854e30471263b928!8m2!3d40.7609285!4d-111.8898649">31 E 400 S, Salt Lake City</a></li>
+                    </ul> 
+
+                </div>
+
+                <div class="col col-xs-4">
+
+                    <h4>Follow Us</h4>
+
+                    <div class="row social">
+
+                        <div class="col col-xs-4">
+
+                            <a class="social-badge facebook" href=""><i class="fa fa-facebook"></i></a>
+
+                        </div> <!-- col -->
+
+                        <div class="col col-xs-4">
+
+                            <a class="social-badge instagram" href=""><i class="fa fa-instagram"></i></a>
+
+                        </div> <!-- col -->
+
+                        <div class="col col-xs-4">
+
+                            <a class="social-badge twitter" href=""><i class="fa fa-twitter"></i></a>
+
+                        </div> <!-- col -->
+
+                    </div> <!-- row -->
+
+                </div> <!-- col -->
+
+                <div class="col col-xs-4">
+
+                    <h4>Location</h4>
+
+                    <div id="map-footer"></div>
+
+                    <script async defer
+                        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB4eaFIZjEFVyTS2IqNtCbIL4960EfhByw&callback=initMap">
+                    </script>
+
+                </div>
+
+            </div> <!-- row -->
+
+            <p>Site Created by: <a href="">Caleb Anderson</a></p>
+            <p>&copy; 2018 | The Green Pig Pub</p>
+
+        </div> <!-- container -->
+
+    </footer>
+
+
+
+<!-- ======= JAVASCRIPT ========================== -->
+
+    <script src="/assets/Jquery/jquery-3.2.1.min.js"></script>
+    <script src="js/map-footer.js"></script>
+
+    
+</body>
+</html>

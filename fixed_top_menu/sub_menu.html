@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sub Menu</title>
+    
+    <style>
+    
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            font-family: sans-serif;
+        }
+        
+        a {
+            text-decoration: none;
+        }
+        
+        li {
+            list-style: none;
+        }
+        
+        nav#main {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            text-align: center;
+            background-color: #333;
+        }
+        
+        nav {
+            width: 100%;
+            text-align: center;
+            background-color: #444;
+        }
+        
+        nav ul li {
+            display: inline-block;
+            padding: 24px 10px;
+        }
+        
+        nav ul li a {
+            color: white;
+            padding: 10px 25px;
+            text-transform: uppercase;
+        }
+        
+        section {
+            height: 100vh;
+            text-align: center;
+        }
+        
+        #classic {
+            background-color: blue;
+        }
+        
+        #vegan {
+            background-color: red;
+        }
+        
+        #late-night {
+            background-color: black;
+        }
+        
+        #breakfast {
+            background-color: gray;
+        }
+        
+        .hero {
+            background-color: brown;
+        }
+        
+        .fixed {
+            position: fixed;
+            top: 66px;
+            height: 70px;
+            z-index: 1;
+        }
+        
+        .sub-menu-btn {
+             background:none!important;
+             color:white;
+             border:none; 
+             padding: 0 33px;
+             font: inherit;
+             /*border is optional*/
+             cursor: pointer; 
+        }
+    
+    </style>
+    
+</head>
+<body>
+   
+   <nav id="main">
+       <ul>
+           <li><a href="#">About</a></li>
+           <li><a href="#">Menu</a></li>
+           <li><a href="#">Home</a></li>
+           <li><a href="#">Events</a></li>
+           <li><a href="#">Contact</a></li>
+       </ul>
+   </nav>
+   
+   <section class="hero">Hero</section>
+   
+   <nav id="sub">
+       <ul>
+           <li><input type="submit" id="classic-btn" class="sub-menu-btn" value="Classic"></li>
+           <li><input type="submit" id="vegan-btn" class="sub-menu-btn" value="Vegan"></li>
+           <li><input type="submit" id="late-night-btn" class="sub-menu-btn" value="Late"></li>
+           <li><input type="submit" id="breakfast-btn" class="sub-menu-btn" value="Breakfast"></li>
+       </ul>
+   </nav>
+   
+   <section id="classic">Classic</section>
+   <section id="vegan">vegan</section>
+   <section id="late-night">late</section>
+   <section id="breakfast">breakfast</section>
+    
+</body>
+
+<script src="/assets/Jquery/jquery-3.2.1.min.js"></script>
+<script>
+    
+    $(document).ready(function() {
+        var navLinks = $('nav#sub ul li a');
+        
+        $('#vegan').hide();
+        $('#late-night').hide();
+        $('#breakfast').hide();
+        
+        $('#classic-btn').click(function() {
+            $('#vegan').fadeOut(500);
+            $('#late-night').fadeOut(500);            
+            $('#breakfast').fadeOut(500);            
+            $('#classic').delay(495).fadeIn(500);            
+        });
+        
+        $('#vegan-btn').click(function() {
+            $('#classic').fadeOut(500);
+            $('#late-night').fadeOut(500);            
+            $('#breakfast').fadeOut(500);            
+            $('#vegan').delay(480).fadeIn(500);            
+        });
+        
+        $('#late-night-btn').click(function() {
+            $('#vegan').fadeOut(500);
+            $('#classic').fadeOut(500);            
+            $('#breakfast').fadeOut(500);            
+            $('#late-night').delay(478).fadeIn(500);            
+        });
+        
+        $('#breakfast-btn').click(function() {
+            $('#vegan').fadeOut(500);
+            $('#late-night').fadeOut(500);            
+            $('#classic').fadeOut(500);            
+            $('#breakfast').delay(468).fadeIn(500);            
+        });
+        
+//        navLinks.click(function() {
+//            var self = $(this),
+//                targetLink = "." + self.attr('class'),
+//                targetSection = "#" + self.attr('class').slice(0, self.attr('class').length - 4);
+//
+//            
+//            $(targetSection).fadeIn('slow')
+//        });
+        
+        $(window).bind('scroll', function() {
+            var navHeight = $(window).height() - 70;
+           
+           console.log(navHeight);
+            if ($(window).scrollTop() > navHeight) {
+                $('nav#sub').addClass('fixed');
+            } else {
+                $('nav#sub').removeClass('fixed');
+            }
+        });
+    });
+    
+</script>
+</html>

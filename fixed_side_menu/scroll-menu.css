@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: Opens sans, sans-serif;
+}
+
+nav#scrollspy {
+    position: fixed;
+    top: 35%;
+    right: 0;
+    width: auto;
+    text-align: right;
+}
+nav#scrollspy ul li {
+    list-style: none;
+}        
+nav#scrollspy ul li a {
+    display: block;
+    padding: 5px 20px;
+    text-decoration: none;
+    color: #fff;
+    transition: font-size 0.4s linear;
+    transition: color 0.4s linear;
+}
+nav#scrollspy ul li a.active {
+    font-size: 24px;
+    color: #4dbb04;
+}
+
+section {
+    padding: 70% 0;
+    text-align: center;
+}
+
+section.welcome { background-color: #666; }
+section.starters { background-color: #888; }
+section.specialties { background-color: #999; }
+section.sandwiches { background-color: #aaa; }
+section.burgers { background-color: #bbb; }
+section.greens { background-color: #ccc; }

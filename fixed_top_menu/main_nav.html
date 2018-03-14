@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Main Menu</title>
+    
+    <style>
+    
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: 'Helvetica Neue', Helvetica, sans-serif;
+        }
+        
+        nav {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            text-align: center;
+            background-color: #333;
+        }
+        nav ul li {
+            list-style: none;
+            display: inline-block;
+            padding: 24px 10px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            padding: 10px 20px;
+        }
+        
+        section {
+            height: 100vh;
+            text-align: center;
+        }
+        
+        section:nth-child(odd) {
+            background-color: #888;
+        }
+        
+        .fixed {
+            position: fixed;
+            top: 0;
+            height: 70px;
+            z-index: 1;
+        }
+        
+        .logo {
+            background-image: url(/assets/img/pig.png);
+        }
+    
+    </style>
+        
+</head>
+<body>
+   
+   <nav>
+        <ul>
+            <li><a href="#" class="about-btn">About</a></li>
+            <li><a href="#" class="menu-btn">Menu</a>
+<!--
+                <ul>
+                    <li><a href="">Food</a></li>
+                    <li><a href="">Drinks</a></li>
+                </ul>
+-->
+            </li>
+            <li><a href="#" class="home-btn">Home</a></li>
+            <li><a href="#" class="events-btn">Events</a></li>            
+            <li><a href="#" class="contact-btn">Contact</a></li>
+        </ul>
+   </nav>
+   
+   <section>section</section>
+   <section>section</section>
+   <section>section</section>
+   <section>section</section>
+   <section>section</section>
+    
+</body>
+
+<script src="/assets/Jquery/jquery-3.2.1.min.js"></script>
+<script>
+    
+    $(document).ready(function() {
+        $(window).bind('scroll', function() {
+            var navHeight = $(window).height() - 70;
+            if ($(window).scrollTop() > navHeight) {
+                $('nav').addClass('fixed');
+//                $('.home-btn').addClass('logo');
+            } else {
+                $('nav').removeClass('fixed');
+//                $('.home-btn').removeClass('logo');
+            }
+        });
+    });
+    
+</script>
+</html>

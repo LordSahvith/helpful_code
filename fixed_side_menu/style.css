@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body#menu-test {
+    color: white;
+    font-size: 18px;
+}
+
+li {
+    list-style: none;   
+}
+
+a:hover, a:visited, a:link, a:active {
+    text-decoration: none;
+}
+
+li a, li a:visited  {
+    color: #aee238;
+}
+
+li a:hover, li a:active {
+    color: #4dbb04;
+}
+
+.hero {
+    background-color: blue;
+    height: 700px;
+}
+
+.sect-even {
+    background-color: gray;
+    height: 1000px;
+    margin-top: 0px;
+}
+
+.sect-odd {
+    background-color: black;
+    height: 1000px;
+}
+
+#side-menu {
+    width: auto;
+    position: fixed;
+    right: 15px;
+    top: 35%;
+    font-size: 0.9em;
+    line-height: 2.5em;
+    text-align: right;
+}
+
+li:last-child {
+    margin-top: 8px;
+    line-height: 1.5em;
+}
+
+

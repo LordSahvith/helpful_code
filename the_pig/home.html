@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home || The Green Pig Pub</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="stylesheet" href="/assets/font-awesome/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Bitter" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/media_queries.css">
+    <link rel="stylesheet" href="css/button.css">
+    
+    <style>
+        
+        /*
+            light green - #aee238
+            dark green  - #4dbb04
+        */
+        
+        
+        .banner h3 {
+            padding: 40px 0;
+            background-color: rgba(0, 0, 0, 0.7);
+            transition: all 0.5s;
+        }
+
+        .banner h3:hover {
+            transform: scale(0.85);
+        }
+        
+        /* ==== HOME PAGE NAV ==== */
+        
+        nav.main-nav {
+            bottom: 0;
+            left: 0;
+            display: inline-block;
+        }  
+        
+        .dropdown-up {
+            margin-top: -170px;
+        }
+        
+        
+        /* ==== WELCOME AREA ==== */
+        
+        .welcome {
+            height: 100%;
+            background: #333 url(/assets/img/welcome.jpg) center center no-repeat;
+            background-size: cover;
+        }
+        
+        .pig-welcome {
+            height: 500px;
+            background-image: url(/assets/img/The-Pig-2.png);
+            background-repeat: no-repeat;
+            background-position: center center;
+            padding-top: 55%;
+        }
+        
+        @keyframes appear {
+            0% {
+                transform: opacity(1); 
+            }
+        }
+        
+        
+        /* ==== STORY AREA ==== */
+        
+        .pig-content {
+            padding-bottom: 90px;
+        }
+        
+        .pig-story {
+            padding-bottom: 60px;
+        }
+        
+        
+        /* ==== MENU AREA ==== */
+        
+        .menu-banner {
+            background: #333 url(/assets/img/table_view.jpg) center center no-repeat;
+            background-size: cover;
+        }
+        
+        .menu-sect div h3, 
+        .menu-sect div p {
+            padding-bottom: 35px;
+        }
+        
+        
+        /* ==== EVENTS AREA ==== */
+        
+        .events-banner {
+            background: #333 url(/assets/img/events.jpg) center center no-repeat;
+            background-size: cover;
+        }
+        
+        .events-content {
+            padding-bottom: 80px;
+        }
+        
+        .events-sect h3,
+        .events-sect p {
+            padding-bottom: 35px;
+        }
+        
+        .event {
+            background-color: #333;
+            height: 250px;
+            margin-bottom: 40px;
+        }
+        
+        .event1 {
+            background: url(/assets/img/blues_1.jpg) center center no-repeat;
+            background-size: cover;
+        }
+        
+        .event2 {
+            background: url(/assets/img/dj_latu_1.jpg) center center no-repeat;
+            background-size: cover;
+        }
+        
+        .event3 {
+            background: url(/assets/img/events_1.jpg) center center no-repeat;
+            background-size: cover;
+        }
+        
+        .event4 {
+            background: url(/assets/img/live_music_1.jpg) center center no-repeat;
+            background-size: cover;
+        }
+        
+        .event5 {
+            background: url(/assets/img/paint_event.jpg) center center no-repeat;
+            background-size: cover;
+        }
+        
+        .event6 {
+            background: url(/assets/img/dj_latu_1.jpg) center center no-repeat;
+            background-size: cover;
+        }
+        
+        .event p {
+            position: absolute;            
+        }
+        
+    
+    </style>
+    
+</head>
+<body>
+
+    
+<!-- ======= WELCOME ========================== -->
+
+    <header class="welcome">
+
+        <div class="pig-welcome"></div>
+
+    </header>
+
+
+<!-- ======= MAIN NAV ========================== -->   
+   
+    <nav class="main-nav">
+        <ul>
+            <li><a href="about.html">About</a></li>
+            <li class="dropbtn"><a href="menu.html">Menu <i class="fa fa-caret-up"></i></a>
+                <ul class="dropdown dropdown-up">
+                    <a href="food.html"><li>Food</li></a>
+                    <a href="drinks.html"><li id="lil-left">Drinks</li></a>
+                </ul>       
+            </li>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+
+<!-- ======= THE PIG STORY ========================== -->
+
+    <section>
+
+        <div class="pig-content">
+
+            <div class="container">
+
+                <div class="pig-story">
+
+                    <h2>The Pig Story</h2>
+
+                    <div class="divider"></div>
+
+                    <p>That's him. (Marty points out George who's walking down the hall. He has a 'kick me' sign on his back and guys keep going by and kicking him in the butt.) Okay, okay you guys, oh ha ha ha very funny. Hey you guys are being real mature. Maybe you were adopted. Okay, real mature guys. (He drops his books.) Okay, Biff, will you pick up my books?</p>
+
+                    <p>(As Marty looks ahead he sees that the fake Indians from the screen have turned into full fledged Indians and they are heading straight towards him.) INDIANS! (An Indian drumbeat begins to play.) AHHHH!! (He spins around and spots the cave Doc had talked about earlier.) The cave! (He drives toward the cave and watches the Indians and their horses leaping over the cave. Marty climbs out of the cave thinking he's safe, but then he sees the Calvary chasing the Indians.) Shit, the cavalry!! (He runs back into the cave. Once he's sure that the coast is clear he checks out the Delorean for damages and sees an arrow that an Indian shot into the car. He pulls it out and sees liquid leaking out of the car.) Damn, I ripped the fuel line.</p>    
+
+                </div> <!-- pig-story -->
+
+                <a href="about.html" class="button">More Story</a>
+
+            </div> <!-- container -->      
+
+        </div> <!-- pig-content -->
+
+    </section>
+
+
+<!-- ======= MENU BANNER ========================== -->
+
+    <section class="banner menu-banner">
+
+        <div class="banner-container">
+
+            <a href="menu.html"><h3>Menus</h3></a>
+
+        </div>   
+
+    </section>
+
+
+<!-- ======= MENU SECTION ========================== -->
+
+    <section class="menu-sect">
+
+        <div class="container">
+
+            <h3>Hungry...Parched?</h3>
+            
+            <p>Come Pig Out on our delicious, made in house from scratch food menu. Since your at it might as well enjoy one of our handcrafted concktails.</p>
+
+            <div class="divider"></div>
+
+            <div class="row">
+
+                <div class="col col-xs-6">
+                    <a href="food.html">
+                       <div class="menu-opt food">
+                            <h3>Food</h3>
+                        </div>
+                    </a>
+                </div> <!-- col -->
+
+                <div class="col col-xs-6">
+                    <a href="drinks.html">
+                       <div class="menu-opt drinks">
+                            <h3>Drinks</h3>
+                        </div>
+                    </a>
+                </div> <!-- col -->
+
+            </div> <!-- row -->
+
+        </div> <!-- container -->
+
+    </section>
+
+
+<!-- ======= EVENTS BANNER ========================== -->
+
+    <section class="banner events-banner">
+        
+        <div class="banner-container">
+            
+            <a href="events.html"><h3>Events</h3></a>
+            
+        </div>
+        
+    </section>
+
+
+<!-- ======= EVENTS SECTION ========================== -->
+
+    <section class="events-sect">
+
+        <div class="container">
+
+            <div class="events-content">
+
+                <h3>Come Play!</h3>
+
+                <p>Jam out with us every Monday with Blues Jam @ 10. Test your wit Wednesdays with Trivia Factory's General Trivia or Sunday for Adult Trivia both start @ 7 so you better hurry and claim your spot. Every Saturday @ 10 we got DJ Latu from U92 blastin away, so come dance your heart out!</p>
+
+                <div class="divider"></div>
+
+                <div class="row event-scaler">
+
+                    <div class="col col-xs-4">
+
+                        <div class="event event1">
+                            <p>Blues Jam</p>
+                        </div>
+
+                    </div> <!-- col -->
+
+                    <div class="col col-xs-4">
+
+                        <div class="event event2">
+                            <p>DJ Latu</p>
+                        </div>
+
+                    </div> <!-- col -->
+
+                    <div class="col col-xs-4">
+
+                        <div class="event event3">
+                            <p>Karaoke</p>
+<!--                            <p>change me</p>-->
+                        </div>
+
+                    </div> <!-- col -->
+
+                </div> <!-- row -->
+
+                <div class="row event-scaler">
+
+                    <div class="col col-xs-4">
+
+                        <div class="event event4">
+                            <p>Live Music</p>
+                        </div>
+
+                    </div> <!-- col -->
+
+                    <div class="col col-xs-4">
+
+                        <div class="event event5">
+                            <p>Paint Nite</p>
+                        </div>
+
+                    </div> <!-- col -->
+
+                    <div class="col col-xs-4">
+
+                        <div class="event event6">
+                            <p>General Trivia</p>
+<!--                            <p>change me too</p>-->
+                        </div>
+
+                    </div> <!-- col -->
+
+                </div> <!-- row -->
+
+                <p>Feel free to contact us with any questions.</p>
+
+                <a href="contact.html" class="button">Contact Us</a>
+
+            </div> <!-- events-content -->           
+
+
+        </div> <!-- container -->
+
+    </section>
+
+
+<!-- ======= FOOTER ========================== -->
+
+<footer>
+    
+    <div class="container">
+        
+        <div class="row">
+            
+            <div class="col col-xs-4">
+               
+                <h4>Hours</h4>
+               
+                <ul class="hours">
+                    <li><i class="fa fa-clock-o"></i> Mon-Sat 11:00a - 1:00a</li>
+                    <li><i class="fa fa-tv"></i> Sun 10:00a - 1:00a</li>
+                    <li><i class="fa fa-phone"></i> Phone : (801)532-7441</li>
+                    <li><i class="fa fa-address-book"></i> <a target="_blank" href="https://www.google.com/maps/place/The+Green+Pig+Pub/@40.7609285,-111.8920536,17z/data=!3m1!4b1!4m5!3m4!1s0x8752f51053a20201:0x854e30471263b928!8m2!3d40.7609285!4d-111.8898649">31 E 400 S, Salt Lake City</a></li>
+                </ul> 
+                
+            </div>
+            
+            <div class="col col-xs-4">
+               
+                <h4>Follow Us</h4>
+                
+                <div class="row social">
+                    
+                    <div class="col col-xs-4">
+                       
+                        <a class="social-badge facebook" href=""><i class="fa fa-facebook"></i></a>
+                        
+                    </div> <!-- col -->
+                    
+                    <div class="col col-xs-4">
+                       
+                        <a class="social-badge instagram" href=""><i class="fa fa-instagram"></i></a>
+                        
+                    </div> <!-- col -->
+                    
+                    <div class="col col-xs-4">
+                       
+                        <a class="social-badge twitter" href=""><i class="fa fa-twitter"></i></a>
+                        
+                    </div> <!-- col -->
+                    
+                </div> <!-- row -->
+                
+            </div> <!-- col -->
+            
+            <div class="col col-xs-4">
+               
+                <h4>Location</h4>
+                
+                <div id="map-footer"></div>
+                
+                <script async defer
+                    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB4eaFIZjEFVyTS2IqNtCbIL4960EfhByw&callback=initMap">
+                </script>
+                
+            </div>
+            
+        </div> <!-- row -->
+        
+        <p>Site Created by: <a href="">Caleb Anderson</a></p>
+        <p>&copy; 2018 | The Green Pig Pub</p>
+        
+    </div> <!-- container -->
+    
+</footer>
+
+
+
+<!-- ======= JAVASCRIPT ========================== -->
+
+<script src="/assets/Jquery/jquery-3.2.1.min.js"></script>
+<script src="js/map-footer.js"></script>
+<script>
+
+    $(document).ready(function() {
+        $(window).bind('scroll', function() {
+        var navHeight = $(window).height() - 70;
+            if ($(window).scrollTop() > navHeight) {
+                $('nav.main-nav').addClass('fixed');
+                // $('.home-btn').addClass('logo');
+            } else {
+                $('nav.main-nav').removeClass('fixed');
+                // $('.home-btn').removeClass('logo');
+            }
+
+            if($(window).scrollTop() > 150) {
+                $('ul.dropdown').removeClass('dropdown-up');
+                $('ul.dropdown').addClass('dropdown-down');                    
+                $('li.dropbtn a i').removeClass('fa-caret-up');
+                $('li.dropbtn a i').addClass('fa-caret-down');
+            } else {
+                $('ul.dropdown').removeClass('dropdown-down');
+                $('ul.dropdown').addClass('dropdown-up');                    
+                $('li.dropbtn a i').removeClass('fa-caret-down');
+                $('li.dropbtn a i').addClass('fa-caret-up');
+            }
+        });
+    });
+
+</script>
+    
+</body>
+</html>

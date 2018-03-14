@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Food</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link href="https://fonts.googleapis.com/css?family=Bitter" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/sub_nav.css">
+    <link rel="stylesheet" href="./css/food.css">
+    <link rel="stylesheet" href="./css/scrolling_nav.css">
+    <link rel="stylesheet" href="./css/menu_options.css">
+    <link rel="stylesheet" href="./css/menu_item.css">
+    <link rel="stylesheet" href="/assets/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/assets/fontawesome-free-5.0.4/web-fonts-with-css/css/fontawesome-all.min.css">
+    
+</head>
+<body>
+   
+    <!-- =========== MAIN NAV ====================== -->
+    
+    <nav class="nav-bar">
+        
+        <div id="mobile-nav" class="overlay">            
+            <div class="overlay-content"> 
+               <div class="container">
+                   
+                    <a href="about.html">About</a>
+                    <a href="menus.html">Menus</a>
+                    <a class="sub-class" href="food.html">Food</a>
+                    <a class="sub-class" href="drinks.html">Drinks</a>
+                    <a href="events.html">Events</a>
+                    <a href="contact.html">Contact</a>                
+                   
+               </div>               
+            </div>
+            <div class="mobile-icon" onclick="toggleNav()">                
+               <div class="fade-up">
+                    <div class="toggle-button"> 
+                        <div class="menu-bar menu-bar-top"></div>
+                        <div class="menu-bar menu-bar-middle"></div>
+                        <div class="menu-bar menu-bar-bottom"></div>     
+                    </div>               
+               </div>                      
+            </div>    
+            
+        </div> <!-- mobile-nav -->
+        
+        <a href="index.html"><img class="logo logo-mobile" src="img/logo.png" alt="The Green Pig Pub Logo"></a>
+        
+        <div class="main-nav fade-down">
+            
+            <ul class="nav-items">
+                <li class="nav-item"><a href="about.html">About</a></li>                                
+                <li class="dropdown-btn nav-item">
+                    <a href="menus.html">Menus <i class="fas fa-caret-down"></i></a>
+                        <ul class="dropdown">
+                            <li><a href="food.html">Food</a></li>
+                            <li><a href="drinks.html">Drinks</a></li>
+                        </ul>
+                </li>                                                
+                <a href="index.html"><img class="logo logo-main" src="img/logo.png" alt="The Green Pig Pub Logo"></a>    
+                <li class="nav-item"><a href="index.html">Hom</a></li>                                
+                <li class="nav-item"><a href="events.html">Events</a></li>                                
+                <li class="nav-item"><a href="contact.html">Contact</a></li>                                
+            </ul>
+            
+        </div> <!-- main-nav -->
+        
+    </nav>
+    
+    <section class="hero hero-food"></section>
+    
+    <section class="welcome food-welcome"></section>
+    
+    <!-- =========== SUB MENU ====================== -->
+    
+    <nav class="sub-menu">
+        
+        <div id="mobile-menu" class="overlay">    
+                   
+            <div class="overlay-content"> 
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>         
+               <div class="container">     
+                   <li><button id="menu-classic-btn" class="sub-menu-btn">Classic</button></li>
+                   <li><button id="menu-vegan-btn" class="sub-menu-btn">Vegan</button></li>
+                   <li><button id="menu-late-night-btn" class="sub-menu-btn">Late Night</button></li>
+                   <li><button id="menu-breakfast-btn" class="sub-menu-btn">Breakfast</button></li>
+               </div>               
+            </div>
+            
+            
+        </div> <!-- mobile-nav -->
+            <div class="mobile-icon menu-icon" onclick="toggleMenu()">
+               <div class="fade-up">
+                <i class="fas fa-utensils"></i>                
+               </div>
+            </div>   
+        
+       <ul class="main-nav main-menu">
+           <div class="fade-up">
+            <li><button id="menu-classic-btn" class="sub-menu-btn">Classic</button></li>
+            <li><button id="menu-vegan-btn" class="sub-menu-btn">Vegan</button></li>
+            <li><button id="menu-late-night-btn" class="sub-menu-btn">Late Night</button></li>
+            <li><button id="menu-breakfast-btn" class="sub-menu-btn">Breakfast</button></li> 
+           </div>
+       </ul>
+    </nav>
+    
+    
+    
+    <!-- =========== SCROLLING MENU ====================== -->
+    
+    <nav id="scrolling-food-menu" class="scrolling-menu hide">
+      
+      <div class="scroll-hide">
+            <i class="fas fa-angle-double-left scroll-hide-btn"></i>
+      </div>
+      
+       <ul>
+           <li><button id="starters-btn" class="scrolling-btn">Starters</button></li>
+           <li><button id="specialties-btn" class="scrolling-btn">Specialties</button></li>
+           <li><button id="sandwiches-btn" class="scrolling-btn">Sandwiches</button></li>
+           <li><button id="burgers-btn" class="scrolling-btn">Burgers</button></li>
+           <li><button id="greens-btn" class="scrolling-btn">Bowls/<br>Greens</button></li>
+       </ul>
+   </nav>
+   
+    <div id="menu-classic">
+        
+        <section id="starters" class="banner food-starters-banner sub-menu-banner-gap"></section>
+        
+    </div>
+   
+    <div id="menu-vegan">
+        
+        <section id="vegan" class="banner food-vegan-banner sub-menu-banner-gap"></section>
+        
+    </div>
+   
+    <div id="menu-late-night">
+        
+        <section id="late" class="banner food-late-banner sub-menu-banner-gap"></section>
+        
+    </div>
+   
+   <div id="menu-breakfast">
+   
+        <section class="banner food-breakfast-banner sub-menu-banner-gap"></section>
+    
+    </div>
+   
+  
+   <script src="/assets/Jquery/jquery-3.2.1.min.js"></script>    
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB4eaFIZjEFVyTS2IqNtCbIL4960EfhByw&callback=initMap">
+    </script>
+    <script src="js/mobile_nav.js"></script>
+    <script src="js/sub-nav.js"></script>
+    <script src="js/scrolling_nav.js"></script>
+    <script src="js/map-footer.js"></script>
+    <script src="js/fade_on_scroll.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,63 @@
+.hero-about {
+    background: url(../img/about.jpg) center center no-repeat;
+    background-size: cover;
+}
+ 
+.manager-pic {
+    max-width: 450px;
+    padding-bottom: 60px;
+    padding-top: 60px;
+}
+
+@media and screen (min-width: 750px) {
+    .manager-pic {
+        max-width: 650px;
+    }
+}
+
+@media and screen (min-width: 980px) {
+    .manager-pic {
+        max-width: 800px;
+    }
+}
+
+@media and screen (min-width: 1200px) {
+    .manager-pic {
+        max-width: 960px;
+    }
+}
+
+@media and screen (min-width: 1500px) {
+    .manager-pic {
+        max-width: 1080px;
+    }
+}
+
+.manager-name {
+    padding-top: 40px;
+}
+
+.manager-title {
+    margin-top:  15px;
+    padding-bottom: 0;
+    font-size: 1.2rem;
+}
+
+.manager-content .divider {
+    padding-bottom: 20px;
+}
+
+.manager-content {
+    padding-bottom: 20px;
+}
+
+.about-pub-banner {
+    background: url(../img/pub.jpg) center center no-repeat;
+    background-size: cover;
+    margin-top: -50px;
+}
+
+.about-patio-banner {
+    background: url(../img/patio.jpg) center center no-repeat;
+    background-size: cover;
+}

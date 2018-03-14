@@ -1,0 +1,83 @@
+@media screen and (min-width: 1300px) {
+    body {
+        font-size: 18px;
+    }
+    nav ul li {
+        padding: 24px 60px;
+    }
+    .container {
+        max-width: 1220px;
+        padding-right: 40px;
+        padding-left: 40px;
+    }
+}
+
+@media screen and (max-width: 1120px) {
+    .container {
+        max-width: 800px;
+        font-size: 15px;
+        padding-top: 40px;
+    }
+
+    nav ul li {
+        padding: 24px 40px;
+    }
+}
+
+@media screen and (max-width: 980px) {
+    .container {
+        max-width: 680px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+     /* make mobile friendly navbar  */
+}
+
+@media screen and (max-width: 760px) {
+    body {
+        font-size: 13px;
+    }
+    
+    .container {
+        max-width: 530px;
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+    
+    .banner-container {
+        max-width: 350px;
+    }
+}
+
+@media screen and (max-width: 596px) {
+    body {
+        font-size: 12px;
+    }
+
+    .container {
+        max-width: 400px;
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+    
+    .banner-container {
+        max-width: 300px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    body {
+        font-size: 11px;
+    }
+
+    .container {
+        max-width: 320px;
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+    
+    .banner-container {
+        max-width: 250px;
+    }
+}

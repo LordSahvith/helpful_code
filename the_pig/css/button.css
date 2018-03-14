@@ -1,0 +1,27 @@
+.button {
+    position: absolute;
+    padding: 20px 30px;
+    margin-left: -87px;
+    background-color: #aee238;
+    border-radius: 15px;
+    font-size: 1.2em;
+    color: #222;
+    transition-property: all;
+    transition-duration: .5s;
+}
+
+.button:hover {
+    background-color: #4dbb04;
+    color: #222;
+    transform: scale(0.85);
+}
+
+@keyframes doSomething {
+    0% {
+        
+    }
+    
+    100% {
+        
+    }
+}
