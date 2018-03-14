@@ -10,7 +10,11 @@
 }
 
 .nav-item {
-    padding: 40px 30px;
+    padding: 24px 30px;
+}
+
+.hide-home {
+    opacity: 0;
 }
 
 .dropdown {
