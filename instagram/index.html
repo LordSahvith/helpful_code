@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Instagram Photo Gallery</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+   
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/responsive.css">
+<!--    <link rel="stylesheet" href="css/gallery.css">-->
+    
+    <style>
+
+        img { 
+            transition: all .4s;
+        }
+        
+        .insta-item {
+            position: relative;
+            box-sizing: border-box;
+            overflow: hidden;
+        }
+        
+        .insta-item-sm {
+            margin-bottom: 20px;
+        }
+        
+        .insta-item-sm img {
+            height: 250px;
+            width: 300px;
+        }
+        
+        
+        .insta-item-md {
+            margin-bottom: 20px;
+        }
+        
+        .insta-item-md img {
+            height: 300px;
+            width: 330px;
+        }
+        
+        .insta-item:hover img {
+            transform: scale(1.05);
+        }
+
+    </style>
+    <script src="Jquery/jquery-3.2.1.min.js"></script>
+    <script src="js/instafeed.js"></script>
+    
+</head>
+<body>
+   
+   
+   <section>
+       
+       <div class="container">
+<!--           <script> instafeed('greenpigbluesjam'); </script>-->
+           <div class="row greenpigbluesjam">
+           </div>
+       </div>
+       
+   </section>
+   <section>
+       
+       <div class="container">
+<!--           <script> instafeed('greenpigeats'); </script>-->
+           <div class="row greenpigeats">
+           </div>
+       </div>
+       
+   </section>
+   <section>
+       
+       <div class="container">
+<!--           <script> instafeed('greenpigtrivia'); </script>-->
+           <div class="row greenpigtrivia">
+           </div>
+       </div>
+       
+   </section>
+   <section>
+       
+       <div class="container">
+<!--           <script> instafeed('greenpigpub'); </script>-->
+           <div class="row greenpigpub">
+           </div>
+       </div>
+       
+   </section>
+   
+   
+        
+        <script>
+            
+            instafeed('greenpigbluesjam');
+            
+        </script>
+        
+        <section>
+            
+            <div class="conatiner">
+                
+                <div class="row test">
+                    <div class="col col-sm-6 col-md-4 insta-item insta-item-sm">
+                        <img id="test0" src="/img/angry_vegan_300w.jpg" alt="">
+                    </div>
+                    <div class="col col-sm-6 col-md-4 insta-item insta-item-sm">
+                        <img id="test1" src="/img/angry_vegan_300w.jpg" alt="">
+                    </div>
+                    <div class="col col-sm-6 col-md-4 insta-item insta-item-sm">
+                        <img id="test2" src="/img/angry_vegan_300w.jpg" alt="">
+                    </div>
+                    <div class="col col-sm-6 col-md-4 insta-item insta-item-sm">
+                        <img id="test3" src="/img/angry_vegan_300w.jpg" alt="">
+                    </div>
+                    <div class="col col-sm-6 col-md-4 insta-item insta-item-sm">
+                        <img id="test4" src="/img/angry_vegan_300w.jpg" alt="">
+                    </div>
+                    <div class="col col-sm-6 col-md-4 insta-item insta-item-sm">
+                        <img id="test5" src="/img/angry_vegan_300w.jpg" alt="">
+                    </div>
+                </div>
+                
+            </div>
+            
+        </section>
+    
+    
+    
+</body>
+</html>

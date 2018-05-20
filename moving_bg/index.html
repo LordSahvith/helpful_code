@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    
+    
+    <style>
+        
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        
+        .hero {
+            height: 600px;
+            overflow: hidden;
+        }
+        
+        .hero-home {
+            background-color: rgba(0, 0, 0, 0.2);
+        }
+        
+        .code-area {
+            position: relative;
+            opacity: 0;
+            transition: all;
+        }
+        
+        .code-snippet {
+            position: absolute;
+        }    
+    
+    </style>
+    
+</head>
+<body>
+  
+    <section class="hero hero-home">
+        
+        <div id="code-area-0" class="code-area">
+            <div class="code-snippet">
+                <code>.side-menu {<br>
+                          width: auto;<br>
+                          position: fixed;<br>
+                          right: 15px;<br>
+                          top: 35%;<br>
+                          font-size: 0.9em;<br>
+                          line-height: 2.5em;<br>
+                          text-align: right;<br>
+                      }
+                </code>
+            </div>
+        </div>
+        
+        <div id="code-area-1" class="code-area">
+            <div class="code-snippet">
+                <code>.side-menu {<br>
+                          width: auto;<br>
+                          position: fixed;<br>
+                          right: 15px;<br>
+                          top: 35%;<br>
+                          font-size: 0.9em;<br>
+                          line-height: 2.5em;<br>
+                          text-align: right;<br>
+                      }
+                </code>
+            </div>
+        </div>
+        
+        <div id="code-area-2" class="code-area">
+            <div class="code-snippet">
+                <code>.side-menu {<br>
+                          width: auto;<br>
+                          position: fixed;<br>
+                          right: 15px;<br>
+                          top: 35%;<br>
+                          font-size: 0.9em;<br>
+                          line-height: 2.5em;<br>
+                          text-align: right;<br>
+                      }
+                </code>
+            </div>
+        </div>
+        
+        <div id="code-area-3" class="code-area">
+            <div class="code-snippet">
+                <code>.side-menu {<br>
+                          width: auto;<br>
+                          position: fixed;<br>
+                          right: 15px;<br>
+                          top: 35%;<br>
+                          font-size: 0.9em;<br>
+                          line-height: 2.5em;<br>
+                          text-align: right;<br>
+                      }
+                </code>
+            </div>
+        </div>
+        
+        <div id="code-area-4" class="code-area">
+            <div class="code-snippet">
+                <code>.side-menu {<br>
+                          width: auto;<br>
+                          position: fixed;<br>
+                          right: 15px;<br>
+                          top: 35%;<br>
+                          font-size: 0.9em;<br>
+                          line-height: 2.5em;<br>
+                          text-align: right;<br>
+                      }
+                </code>
+            </div>
+        </div>
+        
+        <div id="code-area-5" class="code-area">
+            <div class="code-snippet">
+                <code>.side-menu {<br>
+                          width: auto;<br>
+                          position: fixed;<br>
+                          right: 15px;<br>
+                          top: 35%;<br>
+                          font-size: 0.9em;<br>
+                          line-height: 2.5em;<br>
+                          text-align: right;<br>
+                      }
+                </code>
+            </div>
+        </div>
+        
+        <div id="code-area-6" class="code-area">
+            <div class="code-snippet">
+                <code>.side-menu {<br>
+                          width: auto;<br>
+                          position: fixed;<br>
+                          right: 15px;<br>
+                          top: 35%;<br>
+                          font-size: 0.9em;<br>
+                          line-height: 2.5em;<br>
+                          text-align: right;<br>
+                      }
+                </code>
+            </div>
+        </div>
+        
+        <div id="code-area-7" class="code-area">
+            <div class="code-snippet">
+                <code>.side-menu {<br>
+                          width: auto;<br>
+                          position: fixed;<br>
+                          right: 15px;<br>
+                          top: 35%;<br>
+                          font-size: 0.9em;<br>
+                          line-height: 2.5em;<br>
+                          text-align: right;<br>
+                      }
+                </code>
+            </div>
+        </div>
+        
+        <div id="code-area-8" class="code-area">
+            <div class="code-snippet">
+                <code>.side-menu {<br>
+                          width: auto;<br>
+                          position: fixed;<br>
+                          right: 15px;<br>
+                          top: 35%;<br>
+                          font-size: 0.9em;<br>
+                          line-height: 2.5em;<br>
+                          text-align: right;<br>
+                      }
+                </code>
+            </div>
+        </div>
+        
+    </section>  <!-- hero -->
+   
+   
+   <script src="/assets/Jquery/jquery-3.2.1.min.js"></script>
+   
+   <script>       
+       
+       var screenWidth = window.innerWidth;
+       
+       // create array/map? to hold code snippets
+       
+       // loop thru elements and set top, left and fontsize before document load
+       for (var i = 0; i < 9; i++) {
+           var topPos1 = Math.floor((Math.random() * 600) + 1),
+               leftPos1 = Math.floor((Math.random() * screenWidth) + 1),
+               size = Math.floor((Math.random() * 20) + 6);
+           
+           document.getElementById("code-area-" + i).style.top = topPos1 + "px";
+           document.getElementById("code-area-" + i).style.left = leftPos1 + "px";
+           document.getElementById("code-area-" + i).style.fontSize = size + "px";
+       }
+       
+    
+       
+       $(document).ready(function() {
+         
+           var $screenWidth = $(window).width(),
+               $snippetWidth = $('.code-area').width(), // will need to target all possible
+               $totalWidth = $screenWidth + $snippetWidth;
+           
+           // loop thru elements and set animation after document load
+           for (var i = 0; i < 9; i++) {
+               var $snippet = $('#code-area-' + i),
+                   $direction = Math.floor((Math.random() * 2) + 1),
+                   $speed = Math.floor((Math.random() * 9000) + 5000);
+               
+               if ($direction === 1) {
+                   $snippet.animate({opacity: 1, left : $totalWidth}, $speed);
+               } else {
+                   $snippet.animate({opacity: 1, left : -$totalWidth}, $speed);
+               }
+               
+           }
+           
+       });
+    
+    </script>
+    
+</body>
+</html>
+
+
